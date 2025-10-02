@@ -1,3 +1,18 @@
 .hero{
-
+    height: 100%;
+    overflow: hidden;
+    display: flex;
 };
+
+.hSection{
+    width: 50%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
