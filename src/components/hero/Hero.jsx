@@ -52,7 +52,7 @@ const Hero = () => {
 
       <div className="hSection right">
         
-        {/* FOLLOW */}
+        {/* Seguir */}
         <div className="follow">
           <a href="/">
             <img src="/instagram.png" alt="" />
@@ -67,10 +67,10 @@ const Hero = () => {
           </a>
         </div>
         
-        {/* BUBBLE */}
+        {/* Balão */}
         <Speech/>
 
-        {/* CERTIFICATE */}
+        {/* Certificado */}
         <div className="certificate">
           <img src="/certificate.png" alt="" />
           CERTIFICADO LMA <br/>
@@ -78,7 +78,7 @@ const Hero = () => {
           PROFISSIONAL
         </div>
 
-        {/* CONTACT BUTTON */}
+        {/* Botão de Contato */}
         <a href="/#contact" className="contactLink">
           <div className="contactButton">
             <svg viewBox="0 0 200 200" width="150" height="150">
