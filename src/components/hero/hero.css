@@ -117,9 +117,27 @@
     margin-bottom: 50px;
 }
 
+.contactButton{
+    position: relative;
+}
+
 .circleText{
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-size: 20px;
+}
+
+.arrow{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80px;
+    height: 8px px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
