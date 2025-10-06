@@ -17,16 +17,16 @@ const Hero = () => {
         <div className="awards">
           <h2>Desenvolvedor bem avaliado</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-
-        <div className="awardList">
-          <img src="/award1.png" alt="" />
-          <img src="/award2.png" alt="" />
-          <img src="/award3.png" alt="" />
+        
+          <div className="awardList">
+            <img src="/award1.png" alt="" />
+            <img src="/award2.png" alt="" />
+            <img src="/award3.png" alt="" />
+          </div>
         </div>
 
         {/*Scroll SVG*/}
-        <a href="#services">
+        <a href="#services" className="scroll">
            <svg
             width="50px"
             height="50px"
@@ -65,6 +65,9 @@ const Hero = () => {
           <a href="/">
             <img src="/youtube.png" alt="" />
           </a>
+          <div className="followTextContainer">
+            <div className="followText">ME SIGA</div>
+          </div>
         </div>
         
         {/* Balão */}
@@ -90,11 +93,11 @@ const Hero = () => {
                 d="M 100, 100 m -60,0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0"
               />
 
-              <text classname="circleText">
+              <text className="circleText">
                 <textPath href="#innerCirclePath">Contrate Agora •</textPath>
               </text>
 
-              <text classname="circleText">
+              <text className="circleText">
                 <textPath href="#innerCirclePath" startOffset="45%">Entre em Contato •</textPath>
               </text>
 
