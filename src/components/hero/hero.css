@@ -190,6 +190,37 @@
     justify-content: center;
 }
 
+@media (max-width: 1536px){
+    .hTitle{
+        font-style: 72px;
+    }
+}
+
+@media (media-width: 1280px){
+    .bg{
+        height: 60%;
+        top: auto;
+        bottom: 0;
+    }
+
+    .hImg{
+        height: 100%;
+    }
+
+    .hTitle{
+        font-size: 88px;
+    }
+
+    .awards{
+        width: 60%;
+    }
+
+    .bubbleContainer{
+        width: 100%;
+    }
+
+}
+
 
 
 
