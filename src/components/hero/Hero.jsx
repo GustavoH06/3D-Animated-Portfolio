@@ -1,5 +1,21 @@
 import "./hero.css";
 import Speech from "./Speech";
+import { motion } from "motion/react"
+
+const awardVariants = {
+  initial: {
+    x: -100,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.2,
+    }
+  }
+}
 
 const Hero = () => {
   return (
@@ -7,23 +23,33 @@ const Hero = () => {
       <div className="hSection left">
 
         {/* Título */}
-        <h1 className="hTitle">
+        <motion.h1
+          initial={{ y: -100, opacity:0}}
+          animate={{ y: 0, opacity: 1}}
+          transition={{duration: 1}}
+          className="hTitle"
+        >
           Olá a Todos,
           <br/>
           <span>Eu Sou João</span>
-        </h1>
+        </motion.h1>
 
         {/* Prêmios */}
-        <div className="awards">
-          <h2>Desenvolvedor bem avaliado</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <motion.div
+          variants={awardVariants}
+          initial="initial"
+          animate="animate"
+          className="awards"
+        >
+          <motion.h2 variants={awardVariants}>Desenvolvedor bem avaliado</motion.h2>
+          <motion.p variants={awardVariants}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</motion.p>
         
-          <div className="awardList">
-            <img src="/award1.png" alt="" />
-            <img src="/award2.png" alt="" />
-            <img src="/award3.png" alt="" />
-          </div>
-        </div>
+          <motion.div variants={awardVariants} className="awardList">
+            <motion.img variants={awardVariants} src="/award1.png" alt="" />
+            <motion.img variants={awardVariants} src="/award2.png" alt="" />
+            <motion.img variants={awardVariants} src="/award3.png" alt="" />
+          </motion.div>
+        </motion.div>
 
         {/*Scroll SVG*/}
         <a href="#services" className="scroll">
