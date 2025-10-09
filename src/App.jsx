@@ -2,10 +2,12 @@ import Hero from "./components/hero/Hero";
 import Services from "./components/services/Services";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
+import Shape from "./components/hero/Shape";
 
 const App = () => {
   return (
-    <div className="container">
+
+    /*<div className="container">
       <section id = "#hero">
         <Hero/>
       </section>
@@ -22,7 +24,8 @@ const App = () => {
         <Contact/>
       </section>
       
-    </div>
+    </div>*/
+    <Shape/>
   )
 }
 
