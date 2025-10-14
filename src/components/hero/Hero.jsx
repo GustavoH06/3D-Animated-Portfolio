@@ -1,6 +1,9 @@
+import { Canvas } from "@react-three/fiber";
 import "./hero.css";
 import Speech from "./Speech";
-import { motion } from "motion/react"
+import { motion } from "motion/react";
+import Shape from "./Shape";
+import { Suspense } from "react";
 
 const awardVariants = {
   initial: {
@@ -141,7 +144,7 @@ const Hero = () => {
           className="certificate"
         >
           <img src="/certificate.png" alt="" />
-          CERTIFICADO LMA <br/>
+          CERTIFICADO HERO GEEK <br/>
           DESENVOLVEDOR WEB <br/>
           PROFISSIONAL
         </motion.div>
@@ -191,7 +194,7 @@ const Hero = () => {
                 viewBox="0 0 24 24"
                 width="50"
                 height="50"
-                fill="none"
+                fill="none" 
                 stroke="black"
                 strokeWidth="2"
               >
@@ -205,6 +208,11 @@ const Hero = () => {
       
       <div className="bg">
         {/* 3D */}
+        <Canvas>
+          <Suspense fallback="loading...">
+            <Shape/>
+          </Suspense>
+        </Canvas>
         <div className="hImg">
           <img src="/hero.png" alt="" />
         </div>
