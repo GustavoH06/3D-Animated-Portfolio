@@ -138,16 +138,12 @@ const Hero = () => {
         <Speech/>
 
         {/* Certificado */}
-        <motion.div
-          animate={{ opacity: [0,1] }}
-          transition={{ duration: 1 }}
-          className="certificate"
-        >
+        <div className="certificate">
           <img src="/certificate.png" alt="" />
-          CERTIFICADO HERO GEEK <br/>
+          CERTIFICADO HERO <br/>
           DESENVOLVEDOR WEB <br/>
           PROFISSIONAL
-        </motion.div>
+        </div>
 
         {/* Botão de Contato */}
         <motion.a 
