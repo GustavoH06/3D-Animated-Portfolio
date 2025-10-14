@@ -163,7 +163,7 @@ const Hero = () => {
             transition={{
               duration: 10,
               repeat: Infinity,
-              ease: linear,
+              ease: "linear",
             }}
           >
             <svg viewBox="0 0 200 200" width="150" height="150">
