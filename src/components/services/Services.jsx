@@ -1,4 +1,5 @@
 import ComputadorContainer from "./computador/ComputadorContainer"
+import Counter from "./Counter"
 import "./services.css"
 
 const service =[
@@ -26,21 +27,27 @@ const Services = () => {
   return (
     <div className='services'>
       <div className="sSection left">
-        <h1 className="sTitle">Como posso ajudar?</h1>
+        <h1
+          className="sTitle"
+        >
+          Como posso ajudar?</h1>
         <div className="serviceList">
           {service.map((service) => (
-            <div className="section" key={service.id}>
+            <div className="service" key={service.id}>
               <div className="serviceIcon">
                 <img src={service.img} alt="" />
               </div>
               <div className="serviceInfo">
                 <h2>{service.title}</h2>
-                <h3>{service.counter} Projects</h3>
+                <h3>{service.counter} Projetos</h3>
               </div>
 
             </div>
           ))}
-
+        </div>
+        <div className="counterList">
+          <Counter from={0} to={104} text="Projetos Completos"/>
+          <Counter from={0} to={72} text="Clientes Felizes"/>
         </div>
       </div>
       <div className="sSection right">
